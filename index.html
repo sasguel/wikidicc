@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<!--<meta name="description" conten="description breve de la pagina"/>-->
+		<!--<meta name="keywodrs" ="palabras, clave, para, el, buscador"/>-->
+		<!--<link rel="shortcut" type="image/x-icon" href="image.ico"/>-->
+
+		<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css"/>
+        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+
+		<script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<script type="text/javascript" src="javascript/servicios.js"></script>
+        
+
+		<title>App wikidictionary</title>
+		
+		</head>
+		<body>
+			<section data-role ="page" id="index" data.title="pagina index">
+				<header data-role="header">
+					<h1>Wikidictionary</h1>
+					<!--<nav data-role="navbar">
+						<ul>
+							<li><a href="#">index</a></li>
+						</ul>
+					</nav>-->
+				</header>
+		<form>	
+<div class="ui-field-contain">
+    <label for="textinput-1">User/Usuario</label>
+    <input name="textinput-1" id="textinput-1" placeholder="" value="" type="text">
+</div>
+<div class="ui-field-contain">
+    <label for="passinput">Password/Contraseña</label>
+    <input name="passinput" id="passinput" placeholder="" value="" type="password">
+</div>
+	<input value="Log In" type="submit">
+    <input value="Clear" type="reset">
+</form>
+				<!-- TEXTO PLANO<article data-role="content">
+					<p>hola soy la pagina uno</p>
+					<input type="button" value="ir a pagina 2" id="btIr" onClick="irPaginaDos()"/>
+				</article>-->
+
+				<footer data-role="footer">
+					<h1>UNISANGIL/PDM</h1>
+				</footer>
+			</section>
+			<!--pagina numero dos-->
+
+			<section data-role ="page" id="pagina2" data.title="pagina dos">
+				<header data-role="header">
+					<h1>wikidictionary</h1>
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#index">index</a></li>
+							<li><a href="#">pagina 2</a></li>
+							<li><a href="#">pagina 3</a></li>
+						</ul>
+					</nav>
+				</header>
+				<article data-role="content">
+					<p>hola soy la pagina dos</p>
+					<input type="button" value="volver" id="btvolver" onClick="volver()"/>
+				</article>
+				<footer data-role="footer">
+					<h1>hola soy el pie de pagina</h1>
+				</footer>
+			</section>
+
+
+
+		</body>
+	</html>
